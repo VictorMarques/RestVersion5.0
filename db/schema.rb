@@ -29,6 +29,8 @@ ActiveRecord::Schema.define(:version => 20130117175651) do
     t.text     "conteudo"
     t.integer  "comentavel_id"
     t.string   "comentavel_type"
+    t.integer  "restaurante_id"
+    t.integer  "cliente_id"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
   end
@@ -77,6 +79,8 @@ ActiveRecord::Schema.define(:version => 20130117175651) do
     t.string   "endereco"
     t.string   "telefone"
     t.integer  "user_id"
+    t.integer  "qualificacao_id"
+    t.integer  "nota_rest"
     t.datetime "created_at",                      :null => false
     t.datetime "updated_at",                      :null => false
     t.string   "especialidade"
